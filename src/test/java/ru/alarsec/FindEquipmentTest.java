@@ -23,7 +23,6 @@ public class FindEquipmentTest {
         open("https://alarsec.ru/");
         $("#s").setValue(value).pressEnter();
         $(".ast-row").shouldHave(Condition.text(text));
-        sleep(10000);
 
     }
 
@@ -35,7 +34,6 @@ public class FindEquipmentTest {
         open("https://alarsec.ru/");
         $("#s").setValue(value).pressEnter();
         $(".ast-row").shouldHave(Condition.text(text));
-        sleep(10000);
 
     }
 
@@ -47,7 +45,6 @@ public class FindEquipmentTest {
         open("https://alarsec.ru/");
         $("#s").setValue(value).pressEnter();
         $$(".ast-row").shouldHave(CollectionCondition.sizeGreaterThan(0));
-        sleep(10000);
 
     }
 
